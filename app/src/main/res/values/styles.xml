@@ -17,4 +17,21 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="Button">
+        <item name="android:colorButtonNormal">#EF4B53</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:width">150dp</item>
+        <item name="android:height">50dp</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">8pt</item>
+    </style>
+
+    <style name="card">
+        <item name="android:colorBackground">@color/lightGrey</item>
+    </style>
+
 </resources>

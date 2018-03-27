@@ -6,7 +6,7 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightGrey"
+    android:background="@color/Grey"
 
     android:fitsSystemWindows="true"
     tools:context="com.example.misa.iwatch.MainActivity">
@@ -47,18 +47,21 @@
                 android:id="@+id/cinema"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:icon="@mipmap/cinema"
                 android:text="cenima" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/movies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:icon="@mipmap/series"
                 android:text="series" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/series"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:icon="@mipmap/persons"
                 android:text="actors" />
 
             <android.support.design.widget.TabItem
