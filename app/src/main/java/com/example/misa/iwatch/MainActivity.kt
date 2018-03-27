@@ -72,32 +72,37 @@ class MainActivity : AppCompatActivity() {
      */
     inner class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
-        override fun getItem(position: Int): Fragment {
+        override fun getItem(position: Int): Fragment? {
             when (position){
                 0 -> {
-                    var home = Home();
+                    var home = Home()
                     return home;
                 }
                 1 -> {
-                    var cinema = Cinema();
+                    var cinema = Cinema()
                     return cinema;
                 }
                 2 -> {
-                    var series = Series();
+                    var series = Series()
                     return series;
                 }
                 3 -> {
-                    var persons = Persons();
+                    var persons = Persons()
                     return persons;
                 }
                 4 -> {
-                    var favorie = Favorie();
+                    var favorie = Favorie()
                     return favorie;
                 }
+                else -> {
+
+                    return null
+                }
+            }
         }
 
         override fun getCount(): Int {
-            // Show 3 total pages.
+            // Show 5 total pages.
             return 5
         }
     }
