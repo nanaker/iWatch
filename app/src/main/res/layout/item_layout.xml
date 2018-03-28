@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-16dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:elevation="5dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="@color/lightGrey"
+            android:id="@+id/cardView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:theme="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guardians of the Galaxy vol.2"/>
+
+                <TextView
+                    android:theme="@style/details"
+                    android:layout_marginTop="-24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2h 21min | Action, Adventure, Fantasy"/>
+
+                <TextView
+                    android:theme="@style/director"
+                    android:layout_marginTop="-24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Director: James Gunn"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="110dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/guardians_galaxy"
+            android:elevation="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/cardView"
+            android:layout_alignTop="@+id/cardView"
+            android:layout_marginTop="118dp"
+            android:src="@mipmap/ic_details"
+            android:layout_marginRight="4dp"
+            android:theme="@style/ButtonDetails" />
+
+    </RelativeLayout>
+
+</LinearLayout>

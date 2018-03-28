@@ -25,13 +25,40 @@
         <item name="android:height">50dp</item>
     </style>
 
-    <style name="title">
+    <style name="ButtonDetails">
+        <item name="android:colorButtonNormal">#EF4B53</item>
         <item name="android:textColor">#ffffff</item>
-        <item name="android:textSize">8pt</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:width">60dp</item>
+        <item name="android:height">50dp</item>
     </style>
+
 
     <style name="card">
         <item name="android:colorBackground">@color/lightGrey</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="details">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="director">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">4pt</item>
+        <item name="android:padding">16dp</item>
     </style>
 
 </resources>
