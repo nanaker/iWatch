@@ -1,5 +1,7 @@
 package com.example.misa.iwatch
 
+import android.content.Intent
+import android.nfc.Tag
 import android.support.design.widget.TabLayout
 import android.support.v7.app.AppCompatActivity
 
@@ -7,17 +9,18 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.support.v4.view.ViewPager
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
 
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class MainActivity : AppCompatActivity() {
-
+    /************************ Adding Tabs and all it's items ************************/
     /**
      * The [android.support.v4.view.PagerAdapter] that will provide
      * fragments for each of the sections. We use a
@@ -28,7 +31,12 @@ class MainActivity : AppCompatActivity() {
      */
     private var mSectionsPagerAdapter: SectionsPagerAdapter? = null
 
+    private var mViewPager: ViewPager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        /************************************** Tabs **************************************/
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -39,9 +47,13 @@ class MainActivity : AppCompatActivity() {
 
         // Set up the ViewPager with the sections adapter.
         container.adapter = mSectionsPagerAdapter
+        container.currentItem = 0
 
         container.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabs))
         tabs.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(container))
+
+        /****************************** Movie Detail Activity ****************************/
+
 
     }
 
@@ -76,23 +88,23 @@ class MainActivity : AppCompatActivity() {
             when (position){
                 0 -> {
                     var home = Home()
-                    return home;
+                    return home
                 }
                 1 -> {
                     var cinema = Cinema()
-                    return cinema;
+                    return cinema
                 }
                 2 -> {
                     var series = Series()
-                    return series;
+                    return series
                 }
                 3 -> {
                     var persons = Persons()
-                    return persons;
+                    return persons
                 }
                 4 -> {
                     var favorie = Favorie()
-                    return favorie;
+                    return favorie
                 }
                 else -> {
 
@@ -105,6 +117,7 @@ class MainActivity : AppCompatActivity() {
             // Show 5 total pages.
             return 5
         }
+
     }
 
 }

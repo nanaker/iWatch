@@ -32,11 +32,102 @@
                 android:layout_marginLeft="24dp"/>
         </LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-24dp">
 
-        </android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:elevation="5dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="@color/lightGrey"
+                android:id="@+id/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:theme="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guardians of the Galaxy vol.2"/>
+
+                    <TextView
+                        android:id="@+id/details"
+                        android:theme="@style/details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2h 21min | Action, Adventure, Fantasy"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/director"
+                            android:theme="@style/director"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Director :"/>
+
+                        <TextView
+                            android:id="@+id/directorName"
+                            android:theme="@style/directorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="James Gunn"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="110dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/guardians_galaxy"
+                android:elevation="2dp"/>
+
+            <Button
+                android:id="@+id/grade"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="4dp"
+
+                android:layout_alignStart="@+id/picture"
+                android:layout_alignTop="@+id/picture"
+                android:layout_marginStart="98dp"
+                android:background="@drawable/round_button"
+                android:text="8.5" />
+
+
+            <ImageButton
+                android:id="@+id/btnMovieDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/cardView"
+                android:layout_alignTop="@+id/cardView"
+                android:layout_marginTop="125dp"
+                android:src="@mipmap/ic_details"
+                android:layout_marginRight="4dp"
+                android:theme="@style/ButtonDetails" />
+
+        </RelativeLayout>
+
     </LinearLayout>
 
 

@@ -17,23 +17,28 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <!-- Button  under Tabs -->
     <style name="Button">
-        <item name="android:colorButtonNormal">#EF4B53</item>
+        <item name="android:colorButtonNormal">@color/bordo</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:elevation">8dp</item>
         <item name="android:width">150dp</item>
         <item name="android:height">50dp</item>
     </style>
 
+
+    <!-- Button Details -->
     <style name="ButtonDetails">
-        <item name="android:colorButtonNormal">#EF4B53</item>
+        <item name="android:colorButtonNormal">@color/bordo</item>
         <item name="android:textColor">#ffffff</item>
-        <item name="android:elevation">8dp</item>
-        <item name="android:width">60dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:width">70dp</item>
         <item name="android:height">50dp</item>
     </style>
 
 
+    <!-- Card handling the information  -->
     <style name="card">
         <item name="android:colorBackground">@color/lightGrey</item>
         <item name="android:elevation">5dp</item>
@@ -43,22 +48,46 @@
         <item name="android:layout_marginBottom">32dp</item>
     </style>
 
+
+    <!-- title card  -->
     <style name="title">
         <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">8pt</item>
-        <item name="android:padding">16dp</item>
+
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">16dp</item>
     </style>
 
+    <!-- Detail card  -->
     <style name="details">
         <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">6pt</item>
-        <item name="android:padding">16dp</item>
+
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
     </style>
 
+
+    <!--   -->
     <style name="director">
         <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">4pt</item>
-        <item name="android:padding">16dp</item>
+
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+
+    </style>
+
+    <style name="directorName">
+        <item name="android:textColor">#B3ffffff</item>
+        <item name="android:textSize">4pt</item>
+
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+
     </style>
 
 </resources>
