@@ -1,11 +1,40 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/lightGrey"
+    android:padding="16dp"
     tools:context="com.example.misa.iwatch.activities.MainActivity">
 
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/roomAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:background="#AAA" />
+
+    <TextView
+
+        android:id="@+id/roomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/roomAvatar"
+        android:layout_alignTop="@+id/roomAvatar"
+        tools:text="Apollo Theater" />
+
+    <TextView
+        android:id="@+id/roomAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B3ffffff"
+        android:layout_alignLeft="@+id/roomName"
+        android:layout_below="@+id/roomName"
+        tools:text="253 W 125th St, New York, NY 10027, États-Unis" />
+
+</RelativeLayout>
