@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/bordo</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -73,7 +73,7 @@
     <!--   -->
     <style name="director">
         <item name="android:textColor">#ffffff</item>
-        <item name="android:textSize">4pt</item>
+        <item name="android:textSize">6pt</item>
 
         <item name="android:paddingTop">8dp</item>
         <item name="android:paddingLeft">16dp</item>
@@ -83,11 +83,26 @@
 
     <style name="directorName">
         <item name="android:textColor">#B3ffffff</item>
-        <item name="android:textSize">4pt</item>
+        <item name="android:textSize">6pt</item>
 
         <item name="android:paddingTop">8dp</item>
         <item name="android:paddingRight">16dp</item>
 
     </style>
+
+    <style name="grade">
+        <item name="android:textColor">#B3ffffff</item>
+        <item name="android:textSize">6pt</item>
+
+    </style>
+
+
+    <style name="actorName">
+        <item name="android:textColor">#B3ffffff</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:paddingTop">8dp</item>
+
+    </style>
+
 
 </resources>

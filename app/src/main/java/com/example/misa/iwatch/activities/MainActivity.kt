@@ -1,7 +1,5 @@
-package com.example.misa.iwatch
+package com.example.misa.iwatch.activities
 
-import android.content.Intent
-import android.nfc.Tag
 import android.support.design.widget.TabLayout
 import android.support.v7.app.AppCompatActivity
 
@@ -9,17 +7,18 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.os.Bundle
-import android.support.v4.view.ViewPager
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Button
-import android.widget.ImageButton
+import com.example.misa.iwatch.R
+import com.example.misa.iwatch.fragments.*
 
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+
+
+class MainActivity : AppCompatActivity(){
+
+
     /************************ Adding Tabs and all it's items ************************/
     /**
      * The [android.support.v4.view.PagerAdapter] that will provide
@@ -31,8 +30,6 @@ class MainActivity : AppCompatActivity() {
      */
     private var mSectionsPagerAdapter: SectionsPagerAdapter? = null
 
-    private var mViewPager: ViewPager? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         /************************************** Tabs **************************************/
@@ -40,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setSupportActionBar(toolbar)
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager)
@@ -51,9 +47,6 @@ class MainActivity : AppCompatActivity() {
 
         container.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabs))
         tabs.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(container))
-
-        /****************************** Movie Detail Activity ****************************/
-
 
     }
 
@@ -87,23 +80,23 @@ class MainActivity : AppCompatActivity() {
         override fun getItem(position: Int): Fragment? {
             when (position){
                 0 -> {
-                    var home = Home()
+                    var home = HomeFragment()
                     return home
                 }
                 1 -> {
-                    var cinema = Cinema()
+                    var cinema = CinemaFragment()
                     return cinema
                 }
                 2 -> {
-                    var series = Series()
+                    var series = SeriesFragment()
                     return series
                 }
                 3 -> {
-                    var persons = Persons()
+                    var persons = PersonsFragment()
                     return persons
                 }
                 4 -> {
-                    var favorie = Favorie()
+                    var favorie = FavorieFragment()
                     return favorie
                 }
                 else -> {

@@ -1,0 +1,128 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.misa.iwatch.activities.MainActivity"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:theme="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Actors"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="98dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tom_hardy"/>
+
+                    <TextView
+                        android:theme="@style/actorName"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tom Hardy" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:theme="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Ralisator"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="98dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tom_hardy"/>
+
+                    <TextView
+                        android:theme="@style/actorName"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tom Hardy"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:theme="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Associate Movies"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="32dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="132dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/target_movie"/>
+
+                    <TextView
+                        android:theme="@style/actorName"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Target"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,14 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.misa.iwatch.MovieDetailActivity">
+    tools:context="com.example.misa.iwatch.activities.MovieDetailActivity"
 
-    <TextView
+    android:background="@color/Grey">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hollaaaa movie detaiiils"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="110dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="-32dp"
+                android:src="@drawable/guardians_galaxy"
+                android:elevation="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:theme="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guardians of the Galaxy vol.2"/>
+
+                <TextView
+                    android:id="@+id/details"
+                    android:theme="@style/details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2h 21min | Action, Adventure, Fantasy"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/director"
+                        android:theme="@style/director"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Director :"/>
+
+                    <TextView
+                        android:id="@+id/directorName"
+                        android:theme="@style/directorName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="James Gunn"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:theme="@style/grade"
+            android:text="Grade Now"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:theme="@style/title"
+            android:text="Story Line"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/details"
+            android:textColor="#B3ffffff"
+            android:text="Before she was Wonder Woman, she was Diana, princess of the Amazons, trained warrior. When a pilot crashes and tells of conflict in the outside world, she leaves home to fight a war, discovering her full powers and true destiny."/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/Movietabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:elevation="4dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rooms" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments" />
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:background="@color/black"
+            android:id="@+id/movieContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
