@@ -21,7 +21,7 @@ class MovieDetailActivity : AppCompatActivity() {
         val pageAdapter = MovieSectionsPageAdapter(supportFragmentManager)
 
         pageAdapter.addFragment(DetailsFragment(), "DETAILS")
-        pageAdapter.addFragment(RoomsFragment(), "DETAILS")
+        pageAdapter.addFragment(RoomsFragment(), "ROOMS")
         pageAdapter.addFragment(CommentsFragment(), "COMMENTS")
 
 
